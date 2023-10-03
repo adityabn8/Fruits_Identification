@@ -1,0 +1,563 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra&family=Bree+Serif&family=Exo+2:ital,wght@1,600&family=Fruktur&family=Kaushan+Script&family=Lilita+One&family=Rajdhani:wght@300&family=Russo+One&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Lilita One", cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fbfccb;
+  scroll-behavior: auto;
+  overflow-x: hidden;
+  position: relative;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Navbar section */
+.navbar {
+  position: fixed;
+  z-index: 1;
+  width: 100vw;
+  height: 10vh;
+  background-color: #feaa3d;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* font-size:2vw; */
+  font-size: 30px;
+}
+
+.navItems {
+  text-decoration: none;
+  /* display: inline; */
+  cursor: pointer;
+  color: white;
+}
+
+.navItems:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+}
+/* End of navbar section */
+
+/* Footer Section */
+.footer {
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  height: 10vh;
+  margin-top: 10vh;
+  background-color: #feaa3d;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 30px;
+}
+/* End of footer section */
+
+/* Hero section */
+.hero {
+  position: relative;
+  top: 10vh;
+  width: 100vw;
+  height: 1000px;
+  height: fit-content;
+  background: linear-gradient(
+    180deg,
+    rgba(252, 212, 71, 0.41) 0%,
+    rgba(240, 219, 163, 0) 100%
+  );
+  display: flex;
+  flex-direction: column;
+}
+
+.topPart {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.logo {
+  position: relative;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  padding: 20px 10px;
+  background-color: #f5a70adc;
+  border-radius: 100px;
+}
+
+.logoimg {
+  width: 100%;
+  height: 100%;
+}
+
+.title {
+  font-size: 55px;
+  color: #ff8b00;
+  position: relative;
+  display: inline-block;
+  left: 50px;
+}
+
+.FruitsRight {
+  width: 50%;
+}
+.FruitsRight img {
+  width: 100%;
+}
+
+.bottomPart {
+  position: relative;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.FruitsLeft {
+  position: relative;
+  bottom: 100%;
+  width: 55%;
+}
+
+.Leaf {
+  position: relative;
+  top: 140px;
+  left: -20px;
+  width: 10%;
+  height: 10%;
+}
+/* End of Hero section */
+
+/* Content section */
+.content {
+  width: 100vw;
+  position: relative;
+  margin-top: 100px;
+  top: 10vh;
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.leaves {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 150px;
+  height: max-content;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.5;
+}
+
+.left {
+  width: 200px;
+  transform: rotate(180deg);
+}
+.left img {
+  width: 15%;
+}
+.right {
+  width: 200px;
+}
+
+.right img {
+  width: 15%;
+}
+
+.card {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.Question {
+  text-align: center;
+  font-size: 50px;
+  color: #ff8b00;
+}
+
+.Answer {
+  max-width: 700px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.btn {
+  background: #ff8b00;
+  border-radius: 12px;
+  padding: 10px 30px;
+  font-family: "Lilita One", cursive;
+  color: white;
+  border: 1px solid orange;
+  cursor: pointer;
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.trynow {
+  margin-top: 100px;
+  width: 500px;
+  height: 100px;
+  font-size: 60px;
+  border-radius: 30px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+/* End of content section */
+
+/* Heading Component */
+.pageHeading {
+  font-size: 80px;
+  text-align: center;
+  color: #ff8b00;
+  /* margin-top: 5vh; */
+  /* margin-bottom: 150px; */
+  margin-bottom: 50px;
+}
+
+/* About Section */
+.aboutContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* top: 10vh; */
+  /* gap: 100px; */
+}
+
+.Question1 {
+  text-align: center;
+  font-size: 50px;
+  color: #ff8b00;
+  margin: 25px auto;
+}
+
+.Answer1 {
+  max-width: 800px;
+  margin: 0;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.list {
+  flex-direction: column;
+  width: fit-content;
+  font-size: 20px;
+  position: relative;
+  /* left: 20%; */
+  /* display: flex; */
+}
+
+.items {
+  margin-top: 10px;
+  list-style-type: none;
+  display: block;
+  /* list-style-type: decimal; */
+  /* padding: 5px; */
+  /* word-wrap: break-word; */
+}
+.subHeading {
+  text-align: left;
+  font-size: 30px;
+  color: #ff8b00;
+}
+
+.card1 {
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 1.5;
+}
+/* End of About Section */
+
+/* Usage Section */
+.usageContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* padding: 50px; */
+}
+
+.usageBtnContainer {
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 50px;
+}
+
+.usageButton,
+.uploadButton {
+  /* width: 35%;
+  height: 30%; */
+  width: 80%;
+  background-color: #fff;
+  margin: 30px 0px;
+  padding: 20px 0;
+  background: linear-gradient(136.11deg, #fff500 0%, #ed8f39 92.13%);
+  border: 5px solid rgba(255, 138, 0, 0.8);
+  box-shadow: 0px 20px 50px rgba(186, 114, 81, 0.6);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "lilita one";
+}
+
+.preview {
+  position: relative;
+  width: fit-content;
+  height: 300px;
+  max-height: fit-content;
+  overflow: hidden;
+  border-radius: 30px;
+}
+.preview > h1 {
+  margin: 0;
+}
+.previewImage {
+  /* max-width: 100%; */
+  max-height: 100%;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+.uploadButton {
+  cursor: pointer;
+}
+.imageIcons {
+  width: 10%;
+  /* height: 10%; */
+}
+.usageTitle {
+  color: #ff0000;
+}
+
+.usageInfo {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+}
+.usageInfoLabel {
+  padding: 20px;
+  line-height: 1.5;
+  font-size: 18px;
+  text-align: center;
+  margin: 20px 0px;
+  cursor: pointer;
+}
+
+.lineDivider {
+  width: 90%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #f40404;
+  margin: 50px;
+}
+
+.uploadButton {
+  width: 80%;
+  margin-top: 150px;
+  margin-bottom: 0;
+  background: linear-gradient(
+    136.11deg,
+    #ff9900 0%,
+    rgba(214, 44, 21, 0.5) 92.13%
+  );
+  box-shadow: 0px 20px 50px rgba(186, 114, 81, 0.6);
+  border-radius: 60px;
+}
+
+/* End of Usage Section */
+
+/* Conatct Section */
+.contactContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+.DevButton {
+  width: 40%;
+  /* height: 50%; */
+  background: linear-gradient(136.11deg, #ff6b00 0%, #edd039 92.13%);
+  border: 5px solid rgba(255, 138, 0, 0.8);
+  box-shadow: 0px 20px 50px rgba(186, 114, 81, 0.6);
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 50px;
+}
+
+.devPics {
+  width: 30%;
+  /* height: 10%; */
+  border-radius: 12px;
+  border: 5px solid black;
+}
+.name {
+  font-size: 40px;
+  font-weight: 400;
+  /* color: rgb(240, 5, 5); */
+}
+
+.socialDiv,
+.socialDiv > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  /* gap: 50px; */
+  /* border: 2px solid black; */
+  width: 100%;
+}
+
+.socialIcon {
+  width: 30%;
+}
+/* End Of Contact Section */
+
+/* Results Page */
+.resultContainer {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.resultBox {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+
+  background: linear-gradient(
+    164.1deg,
+    rgba(214, 44, 21, 0.5) -0.18%,
+    rgba(242, 247, 12, 0.37) 99.01%
+  );
+  border: 5px solid #e16038;
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.fruitimg {
+  border: 5px solid #e16038;
+  border-radius: 50px;
+  /* width: 30%; */
+  display: inline-block;
+  width: fit-content;
+}
+
+.upperPart {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-evenly; */
+  align-items: self-end;
+  margin: 0;
+}
+.generalInfo {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.points {
+  /* display: inline-block; */
+  margin: 10px;
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+
+.lowerPart {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* End of Results Page */
+
+.formDiv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.points > .fruitDetail {
+  color: rgb(252, 7, 7);
+  font-size: 20px;
+  text-shadow: none;
+  text-transform: capitalize;
+}
+
+.nutrition {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.nutrition p {
+  margin: 10px;
+}
+
+.listvalues {
+  margin: 10px;
+  padding: auto;
+  margin-left: 100px;
+}
+
+
+.linkResult{
+  color:white
+}
